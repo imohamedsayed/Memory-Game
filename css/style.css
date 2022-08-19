@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.controlButton {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(3, 169, 244, 0.9);
+}
+.controlButton span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mainContainer {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.info-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #2196f3;
+  padding: 10px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.mainContainer .cards .card {
+  width: 250px;
+  height: 250px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #2196f3;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.mainContainer .cards .card .face,
+.mainContainer .cards .card .back {
+  position: absolute;
+}
+.mainContainer .cards .card .back {
+  background-color: #607d88;
+  transform: rotateY(180deg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer .cards .card .face {
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.mainContainer .cards .card i {
+  color: white;
+  font-size: 40px;
+}
+
+.mainContainer .cards .card.isFlipped,
+.mainContainer .cards .card.hasMatched {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.mainContainer .cards.no-clicking {
+  pointer-events: none;
+}
+
+.time {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(244, 3, 3, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time .timeout {
+  width: 500px;
+  height: 300px;
+  padding: 10px 20px;
+  border: 10px solid #2196f3;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.timeOut h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.timeOut button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+  margin-top: 20px;
+}
+
+.time.hide {
+  display: none;
+}

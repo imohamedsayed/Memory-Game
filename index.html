@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="controlButton">
+      <span>Start Game <br /> </span>
+    </div>
+
+    <div class="mainContainer">
+      <div class="info-container">
+        <div class="name">
+          Hello : <span></span>, you have 1 minute to complete the game
+        </div>
+        <div class="tries">Wrong Tries : <span>0</span></div>
+      </div>
+      <div class="cards">
+        <div class="card" data-app="facebook">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/facebook.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="facebook">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/facebook.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="twitter">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/twitter.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="twitter">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/twitter.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="linkedin">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/linkedin.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="linkedin">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/linkedin.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="home">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/home.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="home">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/home.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="photoCamera">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img
+              src="image/photoCamera.png"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card" data-app="photoCamera">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img
+              src="image/photoCamera.png"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="card" data-app="socialMedia">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img
+              src="image/socialMedia.png"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card" data-app="socialMedia">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img
+              src="image/socialMedia.png"
+              width="50px"
+              height="50px"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="card" data-app="telegram">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/telegram.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="telegram">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/telegram.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="whatsapp">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/whatsapp.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="whatsapp">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/whatsapp.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+
+        <div class="card" data-app="youtube">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/youtube.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="youtube">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/youtube.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="instagram">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/instagram.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+        <div class="card" data-app="instagram">
+          <div class="face front">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="face back">
+            <img src="image/instagram.png" width="50px" height="50px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="time hide">
+      <div class="timeOut">
+        <h2>OOPS!!! your time is out</h2>
+        <button id="reload">Try again..</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
